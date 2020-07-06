@@ -7,10 +7,10 @@ const Index = ({ poems, ...props }) => {
     <Layout>
       <div className='home'>
         <h1 className='title'>Poems</h1>
-        <h2 className='by-line'>By xypnox</h2>
-        <p className='description'>
-          A collection of poems and poetic pieces written by xypnox
-        </p>
+        <h2 className='by-line'>
+          <a href='https://www.xypnox.com'>By xypnox</a>
+        </h2>
+        <p className='description'>A collection of poems and poetic pieces</p>
         <main>
           <PoemList poems={poems} />
         </main>
