@@ -12,7 +12,7 @@ export default function Layout(props) {
       <section className='layout'>
         <div className='content'>{props.children}</div>
       </section>
-      <footer>©{new Date().getFullYear()} Poems - by xypnox</footer>
+      <footer>©{new Date().getFullYear()} - Poems, by xypnox</footer>
     </div>
   );
 }
