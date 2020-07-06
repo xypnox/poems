@@ -7,7 +7,7 @@ export default function Poem({ frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
 
   return (
-    <Layout pageTitle={`${frontmatter.title}`}>
+    <Layout pageTitle={frontmatter.title}>
       <article className='poem'>
         <h1 className='title'>{frontmatter.title}</h1>
         <div>

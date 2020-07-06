@@ -6,7 +6,10 @@ export default function Layout(props) {
     <div className='page'>
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <title> {props.pagetitle || ''} Poems, by xypnox</title>
+        <title>
+          {' '}
+          {props.pageTitle ? props.pageTitle + ' | ' : ''} Poems, by xypnox
+        </title>
       </Head>
       <Header />
       <section className='layout'>
