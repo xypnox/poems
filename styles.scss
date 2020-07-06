@@ -40,6 +40,15 @@ body {
       font-size: 4rem;
       margin: 5rem 0 3rem;
     }
+    p {
+      margin: 3rem 0;
+      line-height: 1.5;
+    }
+    .date {
+      margin-top: 2rem;
+      color: #666666;
+      font-size: 24px;
+    }
   }
 
   footer {
@@ -73,10 +82,22 @@ body {
 
     .poem-list {
       list-style: none;
-      li a {
-        text-decoration: none;
-        color: black;
-        font-size: 2rem;
+      padding: 0;
+      li {
+        margin: 3rem 0;
+        a {
+          .link-text {
+            font-size: 36px;
+          }
+          text-decoration: none;
+          color: black;
+          font-size: 2rem;
+
+          .date {
+            color: #666666;
+            font-size: 24px;
+          }
+        }
       }
     }
   }
@@ -86,5 +107,9 @@ body {
   .page {
     font-size: 24px;
     margin: 1rem 0;
+
+    .poem .title {
+      font-size: 3rem;
+    }
   }
 }

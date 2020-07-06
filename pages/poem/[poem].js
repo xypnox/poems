@@ -1,7 +1,6 @@
-import Link from 'next/link';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
-
+import moment from 'moment';
 import Layout from '../../components/Layout';
 
 export default function Poem({ frontmatter, markdownBody }) {
@@ -13,6 +12,9 @@ export default function Poem({ frontmatter, markdownBody }) {
         <h1 className='title'>{frontmatter.title}</h1>
         <div>
           <ReactMarkdown source={markdownBody} />
+        </div>
+        <div className='date'>
+          {moment(frontmatter.date).format('D MMMM, y')}
         </div>
       </article>
     </Layout>
