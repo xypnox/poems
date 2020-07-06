@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=EB+Garamond:wght@500;700&display=swap');
 
 body {
   font-family: 'EB Garamond', serif;
@@ -17,6 +17,8 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
 
       .site-title {
         font-size: 28px;
@@ -39,6 +41,8 @@ body {
     .title {
       font-size: 4rem;
       margin: 5rem 0 3rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
     }
     p {
       margin: 3rem 0;
@@ -60,12 +64,14 @@ body {
 
   .home {
     .title {
-      font-size: 5rem;
+      font-size: 6rem;
       text-align: center;
       margin-bottom: 0rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
     }
     .by-line {
-      font-size: 3rem;
+      font-size: 2.5rem;
       text-align: center;
       font-weight: 500;
       margin: 0rem 0rem;
@@ -87,7 +93,9 @@ body {
         margin: 3rem 0;
         a {
           .link-text {
-            font-size: 36px;
+            font-size: 40px;
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
           }
           text-decoration: none;
           color: black;
