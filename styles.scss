@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;800&display=swap');
+
+body {
+  font-family: 'EB Garamond', serif;
+  font-size: 28px;
+}
+
+.page {
+  max-width: 800px;
+  margin: 5rem auto;
+  padding: 0 1rem;
+
+  .header {
+    color: #666666;
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .site-title {
+        font-size: 28px;
+      }
+
+      .links {
+        display: flex;
+        align-items: flex-end;
+        font-size: 24px;
+        a {
+          color: #666666;
+          text-decoration: none;
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+
+  .poem {
+    .title {
+      font-size: 4rem;
+      margin: 5rem 0 3rem;
+    }
+  }
+
+  footer {
+    margin: 10rem 0 5rem;
+    font-size: 24px;
+    color: #666666;
+    text-align: right;
+  }
+
+  .home {
+    .title {
+      font-size: 5rem;
+      text-align: center;
+      margin-bottom: 0rem;
+    }
+    .by-line {
+      font-size: 3rem;
+      text-align: center;
+      font-weight: 500;
+      margin: 0rem 0rem;
+    }
+    .description {
+      text-align: center;
+      color: #666666;
+      margin: 1rem 0 5rem;
+    }
+
+    .poem-list {
+      list-style: none;
+      li a {
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+      }
+    }
+  }
+}
