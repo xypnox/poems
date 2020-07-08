@@ -29,6 +29,11 @@ const About = () => {
           The dates attached with the poems are the last dates I could find that
           relate to the poem, they might have been written before that date.
         </p>
+
+        <p>
+          The source for the website is available at:{' '}
+          <a href='https://github.com/xypnox/poems'>github.com/xypnox/poems</a>.
+        </p>
       </Layout>
     </div>
   );
