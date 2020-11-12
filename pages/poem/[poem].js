@@ -2,12 +2,21 @@ import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import moment from 'moment';
 import Layout from '../../components/Layout';
+import Head from 'next/head';
 
 export default function Poem({ frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
 
   return (
     <Layout pageTitle={frontmatter.title}>
+      <Head>
+        <meta name='description' content={markdownBody.slice(0, 200)} />
+        <meta property='og:description' content={markdownBody.slice(0, 200)} />
+        <meta
+          property='twitter:description'
+          content={markdownBody.slice(0, 200)}
+        />
+      </Head>
       <article className='poem'>
         <h1 className='title'>{frontmatter.title}</h1>
         <div>
