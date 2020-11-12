@@ -3,8 +3,13 @@ import moment from 'moment';
 
 export default function PoemList({ poems }) {
   if (poems === 'undefined') return null;
+
   poems.sort((a, b) => {
-    return moment(b.frontmatter.date).isAfter(a.frontmatter.date);
+    if (a.frontmatter.date < b.frontmatter.date) {
+      return 1;
+    } else {
+      return -1;
+    }
   });
 
   return (

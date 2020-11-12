@@ -4,12 +4,13 @@ body {
   font-family: 'EB Garamond', serif;
   font-size: 28px;
   color: #333333;
+  margin: 0;
 }
 
 .page {
   max-width: 800px;
-  margin: 5rem auto;
-  padding: 0 1rem;
+  margin: 0rem auto;
+  padding: 5rem 1rem;
 
   .header {
     color: #666666;
