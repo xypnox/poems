@@ -2,8 +2,8 @@ import Layout from "../components/Layout";
 
 const About = () => {
   return (
-    <div className="about">
-      <Layout pageTitle="About">
+    <Layout pageTitle="About">
+      <div className="about">
         <h1 className="title">About these poems</h1>
 
         <p>
@@ -41,8 +41,8 @@ const About = () => {
           contains the ID of the image used. Grayscale filter has been applied
           to images for aesthetic appeal.
         </p>
-      </Layout>
-    </div>
+      </div>
+    </Layout>
   );
 };
 

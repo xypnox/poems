@@ -10,6 +10,10 @@ body {
 * {
   a {
     text-decoration: none;
+    color: #666666;
+    &:hover {
+      color: black;
+    }
   }
 }
 
@@ -40,7 +44,6 @@ body {
       }
       .site-title {
         font-size: 28px;
-        // margin-left: -1rem;
       }
 
       .links {
@@ -149,6 +152,17 @@ body {
             font-size: 24px;
           }
         }
+      }
+    }
+  }
+
+  .about {
+    a {
+      color: #333333;
+      text-decoration: underline dotted #666666;
+      &:hover {
+        color: black;
+        text-decoration: underline #666666;
       }
     }
   }
