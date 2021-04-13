@@ -1,16 +1,27 @@
-import Layout from '../components/Layout';
-import PoemList from '../components/PoemList';
-import matter from 'gray-matter';
+import Layout from "../components/Layout";
+import PoemList from "../components/PoemList";
+import matter from "gray-matter";
 
 const Index = ({ poems, ...props }) => {
   return (
     <Layout>
-      <div className='home'>
-        <h1 className='title'>Poems</h1>
-        <h2 className='by-line'>
-          <a href='https://www.xypnox.com'>By xypnox</a>
+      <div className="home">
+        <h1 className="title">Poems</h1>
+        <h2 className="by-line">
+          By{" "}
+          <a
+            href="https://www.xypnox.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underlined-link"
+          >
+            xypnox
+          </a>
         </h2>
-        <p className='description'>A collection of poems and poetic pieces</p>
+        <p className="description">
+          The best poems are the ones <br />
+          we write for ourselves
+        </p>
         <main>
           <PoemList poems={poems} />
         </main>
@@ -27,7 +38,7 @@ export async function getStaticProps() {
     const values = keys.map(context);
 
     const data = keys.map((key, index) => {
-      let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3);
+      let slug = key.replace(/^.*[\\\/]/, "").slice(0, -3);
       const value = values[index];
       const document = matter(value.default);
       return {
@@ -37,7 +48,7 @@ export async function getStaticProps() {
       };
     });
     return data;
-  })(require.context('../poems', true, /\.md$/));
+  })(require.context("../poems", true, /\.md$/));
 
   return {
     props: {
