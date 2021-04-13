@@ -1,6 +1,6 @@
 # Poems
 
-## *By [xypnox](https://www.xypnox.com/)*
+## _By [xypnox](https://www.xypnox.com/)_
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f9555ad4-ea67-4c8d-8b9a-75e29c342238/deploy-status)](https://app.netlify.com/sites/laughing-allen-c9cbe6/deploys) ![](https://img.shields.io/badge/created-with%20%E2%9D%A4%EF%B8%8F-F14D9E)
 
@@ -9,6 +9,8 @@ This repo contains the source for the website: [poems.xypnox.com](https://poems.
 The poems are copyrighted to me and NO you can't copy them without proper attribution and in commercial gains, without permission.
 
 The code however is free to use however you want to.
+
+The blockquote has been repurposed for use as a credit for the images.
 
 ## Development
 
@@ -29,4 +31,3 @@ title: "The name of the poem"
 date: "YYYY-MM-DD"
 ---
 ```
-
