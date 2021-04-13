@@ -1,8 +1,8 @@
-import matter from 'gray-matter';
-import ReactMarkdown from 'react-markdown';
-import moment from 'moment';
-import Layout from '../../components/Layout';
-import Head from 'next/head';
+import matter from "gray-matter";
+import moment from "moment";
+import Layout from "../../components/Layout";
+import Head from "next/head";
+import ReactMarkdown from "react-markdown";
 
 export default function Poem({ frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
@@ -10,20 +10,20 @@ export default function Poem({ frontmatter, markdownBody }) {
   return (
     <Layout pageTitle={frontmatter.title}>
       <Head>
-        <meta name='description' content={markdownBody.slice(0, 200)} />
-        <meta property='og:description' content={markdownBody.slice(0, 200)} />
+        <meta name="description" content={markdownBody.slice(0, 200)} />
+        <meta property="og:description" content={markdownBody.slice(0, 200)} />
         <meta
-          property='twitter:description'
+          property="twitter:description"
           content={markdownBody.slice(0, 200)}
         />
       </Head>
-      <article className='poem'>
-        <h1 className='title'>{frontmatter.title}</h1>
+      <article className="poem">
+        <h1 className="title">{frontmatter.title}</h1>
         <div>
           <ReactMarkdown source={markdownBody} />
         </div>
-        <div className='date'>
-          {moment(frontmatter.date).format('D MMMM, y')}
+        <div className="date">
+          {moment(frontmatter.date).format("D MMMM, y")}
         </div>
       </article>
     </Layout>
@@ -48,12 +48,12 @@ export async function getStaticPaths() {
   const blogSlugs = ((context) => {
     const keys = context.keys();
     const data = keys.map((key, index) => {
-      let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3);
+      let slug = key.replace(/^.*[\\\/]/, "").slice(0, -3);
 
       return slug;
     });
     return data;
-  })(require.context('../../poems', true, /\.md$/));
+  })(require.context("../../poems", true, /\.md$/));
 
   const paths = blogSlugs.map((slug) => `/poem/${slug}`);
 
