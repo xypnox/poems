@@ -1,3 +1,11 @@
-[build]
-  command = "yarn build && yarn export"
-  publish = "out"
+[[redirects]]
+  from = "/poem/*"
+  to = "https://xypnox.com/poems/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/"
+  to = "https://xypnox.com/poems"
+  status = 301
+  force = true
